@@ -4,12 +4,12 @@ function palindrome(str) {
 
   //convert str all characters to lower case
 str = str.toLowerCase();
-  //remove special characters from str
-str = str.replace(/[^\w\d]/g, "");
+  //remove special characters, except '_', from str
+str = str.replace(/[^\w]|[_]/g, "");
   //make copy of str in str2 and convert to lower case
 var str2 = str.toLowerCase();
-  //remove all special characters from str2
-str2 = str2.replace(/[^\w]/g, "");
+  //remove all special characters, except '_', from str2
+str2 = str2.replace(/[^\w]|[_]/g, "");
 
   //declare myArray an iniatialize to as empty
 var myArray = [];
